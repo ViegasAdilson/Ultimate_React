@@ -82,9 +82,11 @@ function Tech({ skillObj }) {
   return (
     <div className="tech" style={{ background: skillObj.color }}>
       <span>{skillObj.skill}</span>
-      <span>{skillObj.level === "beginner" && "👶"}</span>
-      <span>{skillObj.level === "intermediate" && "👍"}</span>
-      <span>{skillObj.level === "advanced" && "💪"}</span>
+      <span>
+        {skillObj.level === "beginner" && "👶"}
+        {skillObj.level === "intermediate" && "👍"}
+        {skillObj.level === "advanced" && "💪"}
+      </span>
     </div>
   );
 }
