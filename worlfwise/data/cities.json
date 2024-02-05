@@ -35,6 +35,18 @@
         "lng": "-2.2851562500000004"
       },
       "id": 3
+    },
+    {
+      "cityName": "Africa/Sao_Tome",
+      "country": "Sao Tome and Principe",
+      "emoji": "🇸🇹",
+      "date": "2024-02-05T09:49:44.157Z",
+      "notes": "",
+      "position": {
+        "lat": "0.9667509997666425",
+        "lng": "7.294921875000001"
+      },
+      "id": 4
     }
   ]
 }
