@@ -6,6 +6,7 @@ import Heading from "../../ui/Heading";
 import Tag from "../../ui/Tag";
 import ButtonGroup from "../../ui/ButtonGroup";
 import Button from "../../ui/Button";
+import Empty from "../../ui/Empty";
 import ButtonText from "../../ui/ButtonText";
 
 import { useMoveBack } from "../../hooks/useMoveBack";
@@ -35,6 +36,8 @@ function BookingDetail() {
   const { checkout, isCheckingOut } = useCheckout();
 
   if (isLoading) return <Spinner />;
+  if (!booking) return <Empty resourceName="booking" />;
+
   const { status, id: bookingId } = booking;
 
   const statusToTagName = {
