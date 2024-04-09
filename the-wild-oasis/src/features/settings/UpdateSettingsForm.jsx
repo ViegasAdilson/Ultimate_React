@@ -15,17 +15,18 @@ function UpdateSettingsForm() {
       breakfastPrice,
     } = {},
   } = useSettings();
+
   const { isUpdating, updateSetting } = useUpdateSetting();
 
   if (isLoading) return <Spinner />;
 
   function handleUpdate(e, field) {
     const { value } = e.target;
-
     if (!value) return;
-    updateSetting({ [field]: value });
+    updateSetting({
+      [field]: value,
+    });
   }
-
   return (
     <Form>
       <FormRow label="Minimum nights/booking">
